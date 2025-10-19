@@ -157,8 +157,6 @@ def is_consistent(statement_one: str, statement_two: str) -> bool:
 
 
 def is_inconsistent(statement_one: str, statement_two: str) -> bool:
-    truth_table_one = evaluate_statement(statement_one)
-    truth_table_two = evaluate_statement(statement_two)
     if is_consistent(statement_one, statement_two):
         return False
     return True
